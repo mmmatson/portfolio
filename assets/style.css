@@ -19,3 +19,13 @@ footer {
     background-color: rgb(239, 239, 239);
     color: gray;
 }
+
+.resize-logo {
+    width: 100px;
+    height: auto;
+    }
+
+.resize-photo {
+    width: 200px;
+    height: auto;
+    }
