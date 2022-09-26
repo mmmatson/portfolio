@@ -6,31 +6,66 @@
 
 body {
     background-color: #ffffff;
-    color: black;
+    color: gray;
 }
-
 
 header {
     background-color: black;
     color: white;
 }
 
-footer {
-    background-color: rgb(239, 239, 239);
-    color: gray;
+header nav {
+    padding-top: 45px;
+    margin-right: 200px;
+    float: right;
+    font-size: 25px;
 }
 
-.resize-logo {
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+.header-logo {
     width: 100px;
     height: auto;
+    margin-left: 200px;
+    padding-top: 10px;
     }
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+section {
+    padding-top: 25px;
+}
+
+main section ul {
+    list-style-type: none;
+}
 
 .resize-photo {
     width: 200px;
     height: auto;
     }
 
-.resize-footer {
+footer {
+    background-color: rgb(239, 239, 239);
+    color: gray;
+}
+
+.footer-logo {
     width: 50px;
     height: auto;
+    margin-left: 200px;
     }
