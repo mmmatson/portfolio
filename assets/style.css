@@ -1,24 +1,30 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root {
+    --padding-medium: 20%;
+    --padding-small:5rem;
+    --white: white;
+    --gray: gray;
 }
 
 body {
-    background-color: #ffffff;
-    color: gray;
+    /* Footer on bottom of page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Font */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2rem;
 }
 
 header {
+    /* background color and text color for header */
     background-color: black;
-    color: white;
+    color: var(--white);
 }
 
 header nav {
-    padding-top: 45px;
-    margin-right: 200px;
     float: right;
-    font-size: 25px;
+    margin-right: var(--padding-medium);
+    padding-top: var(--padding-small);
 }
 
 header nav ul {
@@ -27,45 +33,65 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 2rem;
 }
-
 
 .header-logo {
-    width: 100px;
+    margin-left: var(--padding-medium);
+    padding-top: var(--padding-small);
+    width: 10rem;
     height: auto;
-    margin-left: 200px;
-    padding-top: 10px;
-    }
+}
 
 main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 200px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    box-sizing: border-box; 
+    background-color: var(--white);
+    color: var(--gray);
+    padding-right: var(--padding-medium);
+    padding-left: var(--padding-medium);
+    padding-top: var(--padding-small);
+    padding-bottom: var(--padding-small);
+    width: 100%;
+    /* Footer on bottom of page */
+    flex-grow: 1;
 }
 
-section {
-    padding-top: 25px;
-}
+figure {
+    border: 1px solid var(--gray);
+    padding: var(--padding-small);
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
 
 main section ul {
     list-style-type: none;
 }
 
+.figure-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+}
+
 .resize-photo {
-    width: 200px;
+    width: 15rem;
     height: auto;
+    } 
+
+figure:hover {
+    box-shadow: inset 0px 0px 15px black, 0px 0px 15px black;
     }
 
 footer {
+    /* background color and text color for footer */
     background-color: rgb(239, 239, 239);
-    color: gray;
+    border: 2px rgb(239, 239, 239) solid;
+    border-top: 2px rgb(216, 216, 216) solid;
+    color: var(--gray);
 }
 
 .footer-logo {
-    width: 50px;
+    width: 5rem;
     height: auto;
-    margin-left: 200px;
-    }
+    margin-left: var(--padding-medium);
+    padding-top: var(--padding-small);
+}
