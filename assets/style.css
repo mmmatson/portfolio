@@ -17,14 +17,22 @@ body {
 
 header {
     /* background color and text color for header */
-    background-color: black;
-    color: var(--white);
-}
+        background-color: black;
+        color: var(--white);
+        border: black solid 2px;
+    /* header items position and alignment */
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: center;
+        flex-direction: row;
+    }
 
 header nav {
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
     margin-right: var(--padding-medium);
-    padding-top: var(--padding-small);
 }
 
 header nav ul {
@@ -37,8 +45,6 @@ header nav ul li {
 }
 
 .header-logo {
-    margin-left: var(--padding-medium);
-    padding-top: var(--padding-small);
     width: 10rem;
     height: auto;
 }
@@ -47,19 +53,21 @@ main {
     box-sizing: border-box; 
     background-color: var(--white);
     color: var(--gray);
-    padding-right: var(--padding-medium);
-    padding-left: var(--padding-medium);
-    padding-top: var(--padding-small);
-    padding-bottom: var(--padding-small);
     width: 100%;
+    /* Flex display and alignment for main items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* Footer on bottom of page */
     flex-grow: 1;
 }
 
 figure {
     border: 1px solid var(--gray);
-    padding: var(--padding-small);
     position: relative;
+    width: 250px;
+    height: 250px;
     transition: all 1s ease-in-out;
   }
 
@@ -67,16 +75,15 @@ main section ul {
     list-style-type: none;
 }
 
-.figure-wrapper {
+/* flexbox container */
+.container-wrapper {
     display:flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.resize-photo {
-    width: 15rem;
-    height: auto;
-    } 
-
+/* shadow around figures when hovering */
 figure:hover {
     box-shadow: inset 0px 0px 15px black, 0px 0px 15px black;
     }
@@ -89,9 +96,9 @@ footer {
     color: var(--gray);
 }
 
+/* resize and position footer logo */
 .footer-logo {
     width: 5rem;
     height: auto;
     margin-left: var(--padding-medium);
-    padding-top: var(--padding-small);
 }
