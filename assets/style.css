@@ -49,6 +49,11 @@ header nav ul li {
     height: auto;
 }
 
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 main {
     box-sizing: border-box; 
     background-color: var(--white);
