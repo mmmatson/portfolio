@@ -63,30 +63,70 @@ main {
     flex-grow: 1;
 }
 
-figure {
-    border: 1px solid var(--gray);
-    position: relative;
-    width: 250px;
-    height: 250px;
-    transition: all 1s ease-in-out;
-  }
+h1, h2, h3 {
+    font-size: 3rem;
+}
+
+p {
+    background-color: var(--white);
+    padding: 1rem;
+    border: solid var(--gray) 1px;
+    font-size: 1rem;
+    text-align: center;
+}
 
 main section ul {
     list-style-type: none;
 }
 
 /* flexbox container */
-.container-wrapper {
+.container {
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 80%;
 }
 
+.sample {
+    max-width: 15rem;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+
+.card {
+    padding: 2.5rem;
+    margin: 2.5rem;
+    background-color: rgb(239, 239, 239);
+    border: solid var(--gray) 1px;
+    width: 25%;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+h2 {
+margin-bottom: 10px;
+text-align: center;
+font-size: 2rem;
+}
+
+
 /* shadow around figures when hovering */
-figure:hover {
+.sample:hover {
     box-shadow: inset 0px 0px 15px black, 0px 0px 15px black;
+    transform: scale(1.25); 
     }
+
 
 footer {
     /* background color and text color for footer */
