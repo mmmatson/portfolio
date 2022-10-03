@@ -14,42 +14,37 @@
         <img class="header-logo" src="assets/images/MM-logo-black.png" alt="logo with MM initials">
         <nav>
             <ul>
-                <li>Portfolio</li>
-                <li>Bio</li>
-                <li>Contact</li>
+                <li><a href="#Portfolio">Portfolio</li>
+                <li><a href="#Bio">Bio</li>
+                <li><a href="#Contact">Contact</li>
             </ul>
         </nav>
     </header>
     <!-- The main contains the bio, portfolio, and contact sections -->
     <main>
-        <!-- This section contains samples of the developer's work -->
-        <h1>Portfolio</h1>
-        <section class="container-wrapper">
-                <figure>Sample 1</figure>
-                <figure>Sample 2</figure>
-                <figure>Sample 3</figure>
-                <figure>Sample 4</figure>
-                <figure>Sample 5</figure>
-                <figure>Sample 6</figure>
-        </section>
-        <!-- This section contains the developer's name, a recent photo, information about them, and contact information -->
-        <section class="container-wrapper">
-            <section>
-                <h2>Bio</h2>
-                <p>Hello, my name is Margaret Matson. I currently work at Northwestern University as a Project Manager on a team that develops online health interventions.</p>
+        <h1 id="Portfolio">Portfolio</h1>
+            <!-- This section contains samples of the developer's work -->
+            <section class="container">
+                <section class="card">
+                    <h2>Refactoring Code</h2>
+                    <a href="https://mmmatson.github.io/refactor-code/"><img class="sample" src="assets/images/refactor-code-screenshot.png" alt="website with refactored code"></a>
+                </section>
+                <section class="card">
+                    <h2>HTML and CSS</h2>
+                    <a href="https://mmmatson.github.io/prework-study-guide/"><img class="sample" src="assets/images/prework-study-guide-screenshot.png" alt="study guide website"></a>
+                </section>
             </section>
-            <section>
+            <!-- This section contains the developer's name, a recent photo, information about them, and contact information -->
+        <h2 id="Bio">Bio</h2>
+            <section class="container">
                 <img class="resize-photo" src="assets/images/Maggie-Matson.png" alt="Maggie Matson">
+                <p>I currently work at Northwestern University as a Project Manager on a team that develops online health interventions.</p>
             </section>
-            <section>
-                <h3>Contact</h3>
-                <ul>
-                    <li>Email:</li>
-                    <li>GitHub:</li>
-                    <li>LinkedIn:</li>
-                </ul>
-            </section>        
-        </section>        
+        <h3 id="Contact">Contact</h3>
+            <ul>
+                <li>Email: maggie.matson@northwestern.edu</li>
+                <li>GitHub: <a href="https://github.com/mmmatson">mmmatson</li>
+            </ul>
     </main>
     <footer>
         <img class="footer-logo" src="assets/images/MM-logo-transparent-1.png" alt="logo with MM initials">
