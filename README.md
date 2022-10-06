@@ -12,11 +12,13 @@ N/A
 
 ## Usage
 
-Screenshot and url to portfolio with bio, samples of work, and contact information coming soon.
+![website with bio, samples of work, and contact information](assets/images/portfolio-screenshot.png)
+
+[Deployed website] (https://mmmatson.github.io/portfolio/)
 
 ## Credits
 
-N/A
+normalize.css file from: normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
 
 ## License
 
