@@ -1,6 +1,8 @@
+/* variables for colors and spacing */
 :root {
     --padding-medium: 20%;
     --padding-small:5rem;
+    --padding-x-small:2.5rem;
     --white: white;
     --gray: gray;
 }
@@ -10,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Font */
+    /* Font type and size*/
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2rem;
 }
@@ -25,113 +27,100 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        align-content: center;
-        flex-direction: row;
     }
 
+/* add padding on right side of nav */
 header nav {
-    display: flex;
-    flex-wrap: wrap;
     margin-right: var(--padding-medium);
 }
 
+/* do not show bullets in nav list items */
 header nav ul {
     list-style-type: none;
 }
 
+/* display and alignment for nav items */
 header nav ul li {
     display: inline-block;
     margin-left: 2rem;
 }
 
+/* header logo size */
 .header-logo {
     width: 10rem;
     height: auto;
 }
 
+/* text display for anchors */
 a {
     color: var(--white);
     text-decoration: none;
 }
 
 main {
-    box-sizing: border-box; 
+    /* main text and background color */
     background-color: var(--white);
     color: var(--gray);
-    width: 100%;
-    /* Flex display and alignment for main items */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     /* Footer on bottom of page */
     flex-grow: 1;
 }
 
-h1, h2, h3 {
-    font-size: 3rem;
-}
-
-p {
-    background-color: var(--white);
-    padding: 1rem;
-    border: solid var(--gray) 1px;
-    font-size: 1rem;
+main h1 {
+    /* center h1 */
     text-align: center;
-}
+    }
 
-main section ul {
-    list-style-type: none;
-}
 
 /* flexbox container */
 .container {
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-}
-
-.sample {
-    max-width: 15rem;
-    height: auto;
-    transition: all 1s ease-in-out;
-}
-
-.card {
-    padding: 2.5rem;
-    margin: 2.5rem;
-    background-color: rgb(239, 239, 239);
-    border: solid var(--gray) 1px;
-    width: 25%;
-    height: 400px;
-    align-items: center;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-content: flex-start;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    
+  /* Items in flexbox container */
+    .card {
+    background-color: rgb(239, 239, 239);
+    border: solid rgb(216, 216, 216) 1px;
+    padding: var(--padding-x-small);
+    margin: var(--padding-x-small);
+    /* Items can grow and shrink to fill the container */
+    flex: 1 1 200px;
+    /* align text center for application titles */
+    text-align: center;
+    /* transition for hover */
+    transition: all 1s ease-in-out;
+    }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
+/* styling for deployed applications titles */
+.card p {
+    padding: var(--padding-x-small);
+    background-color: var(--white);
+    color: var(--gray);
+    }
+      
+.card img {
+    width: 100%;
+    }
 
-h2 {
-margin-bottom: 10px;
-text-align: center;
-font-size: 2rem;
-}
-
-
-/* shadow around figures when hovering */
-.sample:hover {
+.card:hover {
+    /* shadow around figures when hovering */
     box-shadow: inset 0px 0px 15px black, 0px 0px 15px black;
+    /* make images appear larger when hovering */
     transform: scale(1.25); 
     }
 
+aside {
+    color: var(--gray);  
+    text-align: left;
+    padding: var(--padding-small);
+}
+
+/* bio photo size */
+.resize-photo {
+    width: 15rem;
+    height: auto;
+}
 
 footer {
     /* background color and text color for footer */
@@ -147,3 +136,17 @@ footer {
     height: auto;
     margin-left: var(--padding-medium);
 }
+
+/* Deployed applications display in one column on tablets and smaller devices  */
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  }
+
+/* Deployed applications display in one row on laptops and larger screens */
+  @media screen and (max-width: 1440px) {
+    main {
+      flex-direction: row;
+    }
+  }
