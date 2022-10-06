@@ -98,18 +98,19 @@ main h1 {
     color: var(--gray);
     }
 
-/* size of image in card */
-.card img {
+/* width of image in card */
+.card-image {
     width: 100%;
     }
 
 .card:hover {
-    /* shadow around figures when hovering */
+    /* shadow around cards when hovering */
     box-shadow: inset 0px 0px 15px black, 0px 0px 15px black;
-    /* make images appear larger when hovering */
+    /* make cards appear larger when hovering */
     transform: scale(1.25); 
     }
 
+/* text alignment and color, and padding for aside */
 aside {
     color: var(--gray);  
     text-align: left;
